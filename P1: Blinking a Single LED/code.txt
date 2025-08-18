@@ -1,9 +1,11 @@
+# Import necessary modules for GPIO control and timing
 from machine import Pin
 from time import sleep
 
-led = Pin(4,Pin.OUT)
+# Set GPIO pin 4 as an output to control the LED
+led = Pin(4, Pin.OUT)
 
+# Continuously toggle the LED state every second
 while True:
-    led.toggle()
-    sleep(1)
-
+    led.toggle()  # Switches the LED state: ON to OFF or OFF to ON
+    sleep(1)      # Waits for 1 second before toggling again
