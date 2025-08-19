@@ -19,7 +19,7 @@ It toggles the LED state (ON/OFF) every 1 second.
 
 - **GPIO 4 → LED → Resistor → GND**  
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](https://github.com/KJahnavi-1/Raspberry-Projects/blob/main/P1%3A%20Blinking%20a%20Single%20LED/Representation%20in%20Wokwi.png)
 
 ---
 
