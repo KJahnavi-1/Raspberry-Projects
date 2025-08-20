@@ -1,0 +1,27 @@
+from machine import Pin
+from time import sleep
+
+#Assigning the LED pins as output
+red = Pin(2, Pin.OUT)
+yellow = Pin(3, Pin.OUT)
+green = Pin(4, Pin.OUT)
+
+while True:
+    #the red LED will turns ON and rest will turns OFF
+    red.value(1)
+    yellow.value(0)
+    green.value(0)
+    sleep(3)  #wait for 3 seconds
+    
+    #The yellow LED will turns ON and rest will turns OFF
+    red.value(0)
+    yellow.value(1)
+    green.value(0)
+    sleep(2)  #wait for 2 seconds
+
+    #The green LED will turns ON and the rest will turns OFF
+    red.value(0)
+    yellow.value(0)
+    green.value(1)
+    sleep(3)  #wait for 3 seconds
+
